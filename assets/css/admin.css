@@ -1,0 +1,57 @@
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #00424b;
+  --color-base2: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --color-delete: #be0000;
+  --color-width: 240px;
+  --font-base: "Porto Ilham";
+  --sidbar-width: 240px;
+}
+.kotak {
+  margin-top: 15%;
+}
+.card-login {
+  background-color: #023c44;
+  padding: 27px;
+}
+#main {
+  background-color: #022a30;
+}
+.card-custom .card-custom-image {
+  overflow: hidden;
+}
+
+.card .card-custom-image img {
+  transition: all 0.4s ease;
+}
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.1);
+}
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-brand2);
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+}
+.link-custom:hover::after {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: var(--color-brand);
+}
